@@ -183,7 +183,7 @@ section {
 
 
 /* ==================================Responsive ===================== */
-@media (max-width: 600px){
+@media (max-width: 756px){
         
     .header {
         justify-content: flex-end;
