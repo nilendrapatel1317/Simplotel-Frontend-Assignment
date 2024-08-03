@@ -1,0 +1,292 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* ============================Section 1 =========================== */
+section {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    height: 8vh;
+    background-color: #FF7171;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.6vw;
+}
+
+.header span img {
+    height: 2.5vw;
+}
+
+.section-home {
+    height: 92vh;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #fff2b2, #ffcdd2);
+}
+
+.home-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 4vw;
+    width: 100%;
+    padding: 1vw 7vw;
+}
+
+.home-text-box h1 {
+    font-size: 3vw;
+    margin: 0;
+    font-weight: bolder;
+    letter-spacing: .6vw;
+}
+
+.home-text-box p {
+    font-size: 1.15vw;
+    line-height: 1.8;
+}
+
+.home-text-box button {
+    background-color: #ee6256;
+    color: white;
+    border: none;
+    padding: .6vw 4.5vw;
+    font-size: 1vw;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.home-right {
+    width: 50%;
+    height: 100%;
+}
+
+.home-right img {
+    height: 100%;
+    object-position: -15vw top;
+}
+
+/* ===================== Section 2 =================== */
+.section-gallery {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to right, #fff2b2, #ffccbc, #ffcdd2);
+}
+
+.gallery {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 3vw;
+}
+
+.photo-box {
+    width: 70%;
+    height: 70%;
+    display: flex;
+}
+
+.photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-left {
+    width: 50%;
+    height: 100%;
+}
+
+.photo-left-top {
+    width: 100%;
+    height: 50%;
+    padding: .5vw;
+}
+
+.photo-left-bottom {
+    padding: .5vw;
+    width: 100%;
+    height: 50%;
+}
+
+.photo-right {
+    width: 50%;
+    height: 100%;
+    padding: .5vw;
+}
+
+.gallery-text-content {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #ffccbc, #eeadde);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 1vw;
+}
+
+.gallery-text-box {
+    background-color: #FF7171;
+    padding: 3vw 4vw;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.gallery-text-box p {
+    font-size: 1.2vw;
+}
+
+.gallery-text-box h1 {
+    letter-spacing: .5vw;
+    font-size: 3vw;
+}
+
+.gallery-text-box p {
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.gallery-text-box img {
+    width: 6%;
+}
+
+
+
+
+/* ==================================Responsive ===================== */
+@media (max-width: 600px){
+        
+    .header {
+        justify-content: flex-end;
+        gap: 1vw;
+        padding-right: 10px;
+    }
+    
+    .header a {
+        font-size: 3vw;
+        display: none;
+    }
+    
+    .header span img {
+        height: 10vw;
+    }
+    
+    .section-home {
+        flex-direction: column;
+    }
+    
+    .home-left {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .home-text-box {
+        padding: 1vw 5vw;
+    }
+    
+    .home-text-box h1 {
+        font-size: 12vw;
+    }
+    
+    .home-text-box p {
+        font-size: 3.5vw;
+    }
+    
+    .home-text-box button {
+        padding: 2vw 10vw;
+        font-size: 3.5vw;
+    }
+    
+    .home-right {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .home-right img {
+        object-fit: cover;
+        object-position: -25vw top;
+    }
+    
+
+    .section-gallery {
+        flex-direction: column;
+    }
+    
+    .gallery {
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        padding-right: 0;
+    }
+    
+    .photo-box {
+        width: 95%;
+        height: 95%;
+    }
+    
+    
+    .photo-left-top {
+        padding: 1vw;
+    }
+    
+    .photo-left-bottom {
+        padding: 1vw;
+    }
+    
+    .photo-right {
+        padding: 1vw;
+    }
+    
+    .gallery-text-content {
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        padding-left: 0vw;
+    }
+    
+    .gallery-text-box {
+        width: 90%;
+    }
+    
+    .gallery-text-box p {
+        font-size: 5vw;
+    }
+    
+    .gallery-text-box h1 {
+        font-size: 11vw;
+    }
+    
+    .gallery-text-box p {
+        font-size: 5vw;
+    }
+    
+}
